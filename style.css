@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+.left_side{
+    flex: 1;
+    margin-right: 40px;
+}
+.left_side h1{
+    padding-right: 20%;
+    line-height: 3rem;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.left_side p{
+    padding-right: 20px;
+    line-height: 1.5rem;
+}
+.right_side{
+    flex: 1;
+}
+.top_box{
+    padding: 15px 25px;
+    background-color:hsl(248, 32%, 49%) ;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 7px hsl(249, 10%, 26%, 0.404);
+    margin-bottom: 30px;
+}
+.top_box p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.top_box .trial{
+    font-weight: 700;
+    
+}
+.right_side .form_container{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 7px hsl(249, 10%, 26%, 0.404);
+    border-radius: 10px;
+}
+.input-bx{
+    position: relative;
+}
+.right_side input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid hsl(249, 10%, 26%);
+    outline: none;
+    margin-bottom: 15px;
+}
+.right_side input:focus{
+    border: 1px solid hsl(246, 25%, 77%);
+}
+form .error-img{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    display: none;
+}
+.error-msg{
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 500;
+    padding-bottom: 5px;
+    display: none;
+}
+button{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color:hsl(154, 59%, 51%) ;
+    border-radius: 5px;
+    border: none;
+    cursor: grabbing;
+}
+.click{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+.terms{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+.input-bx.error input{
+    border:1px solid hsl(0, 100%, 74%) ;
+    margin: 0;
+}
+.input-bx p.error-msg{
+    margin: 0 0 15px 0;
+}
+.input-bx.success input{
+    border:1px solid hsl(154, 59%, 51%) ;
+}
+.input-bx.error .error-msg,
+.input-bx.error .error-img{
+    display: block;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a { 
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width:768px){
+    .content{
+        flex-direction: column;
+    }
+    .left_side{
+        text-align: center;
+        margin-right: 0;   
+    }
+    .left_side h1{
+        font-size: 20px;
+        line-height: normal;
+        padding-left: 20%;
+    }
+    .left_side p{
+        padding-left: 10px;
+    }
+    .right_side .form_container{
+        margin: 0 15px;
+        padding: 15px;
+    }
+    .top_box{
+        margin: 15px;
+    }
+}
